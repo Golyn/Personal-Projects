@@ -1,0 +1,81 @@
+/* #main{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,400&display=swap");
+
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+body {
+  font-family: helvetica, sans-serif;
+}
+#main {
+  background-color: #e6e3e2;
+  border-radius: 5px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  /*   text-align:center; */
+  font-family: Lobster;
+  padding-top: 50px;
+}
+#slogan {
+  text-align: center;
+}
+
+#img-div {
+  text-align: center;
+  background-color: white;
+  margin: 20px;
+  padding: 50px 50px 0 50px;
+}
+
+/* Reponsive image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  padding: 10px 0 27px 0;
+}
+
+/* Centering the items div */
+#tribute-info {
+  margin: auto;
+  width: 40%;
+  padding-top: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+ul li {
+  padding: 10px;
+}
+
+.foot {
+  text-align: center;
+  margin: 50px 0;
+  padding-bottom: 50px;
+}
+
+.quote {
+  font-family: Raleway, sans-serif;
+  font-size: 8;
+}
+
+/*Media Queries */
+@media (max-width: 100px) {
+  body {
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 40px;
+  }
+}
