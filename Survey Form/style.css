@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  box-sizing: border-box;
+}
+/* Centering the elements of the body using width and auto */
+/* Positioning the background image with the rest of the attributes  */
+body {
+  width: 55%;
+  margin: auto;
+  background-image: url("images/back1.jpg");
+  background-color: #cccccc;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Rubik;
+  font-size: 18px;
+}
+
+h1,
+p {
+  text-align: center;
+  color: white;
+}
+p {
+  font-family: Raleway, sans-serif;
+}
+.wrapper {
+  background-color: #12072f;
+  border-radius: 5px;
+  padding: 40px;
+  opacity: 80%;
+}
+label {
+  color: aliceblue;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 12px 0;
+}
+
+::placeholder {
+  font-size: 18px;
+}
+
+/* ::placeholder,
+option.opt {
+  font-size: 18px;
+} */
+
+input[type="submit"] {
+  background-color: #12922f;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* option.opt {
+  font-size: 18px;
+} */
