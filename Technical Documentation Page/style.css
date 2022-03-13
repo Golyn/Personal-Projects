@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 300;
+  opacity: 90%;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(255, 255, 255);
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 10px;
+}
+
+#code {
+  background-color: #f3f1f1;
+  padding: 10px;
+}
+
+.sidebar {
+  display: block;
+  grid-area: sidebar;
+  height: 250px;
+  margin: 10px;
+}
+
+.sidebar h1 {
+  padding-right: 30px;
+}
+
+#navbar {
+  overflow-y: scroll;
+  height: 100%;
+  padding-bottom: 90px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+nav h1 {
+  padding: 5px 0;
+}
+
+nav li {
+  list-style: none;
+  display: block;
+  padding: 10px;
+  padding-right: 30px;
+  /* margin-bottom: 5px; */
+  border-top: 1px solid black;
+}
+
+nav li:last-child {
+  border-bottom: 2px solid black;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 12px 0;
+  font-size: larger;
+}
+
+main li {
+  margin-left: 50px;
+  padding-bottom: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 30px;
+  grid-template-areas:
+    "sidebar"
+    "main";
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "sidebar sidebar sidebar"
+      "main    main    main";
+  }
+}
+
+@media (min-width: 600px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "sidebar sidebar sidebar"
+      "main    main    main";
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "sidebar main main"
+      "sidebar main main";
+  }
+  main {
+    font-size: 24;
+    margin-left: 40px;
+  }
+
+  .sidebar {
+    border-right: 3px solid gray;
+    position: fixed;
+    height: 100%;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "sidebar main main main"
+      "sidebar main main main";
+  }
+  main {
+    font-size: 24;
+    margin-left: 40px;
+  }
+
+  .sidebar {
+    border-right: 3px solid gray;
+    position: fixed;
+    height: 100%;
+    margin-right: 20px;
+  }
+}
